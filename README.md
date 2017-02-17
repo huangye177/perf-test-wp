@@ -10,7 +10,9 @@ This default performance test raises a set of scenarios, including:
 
 #### How-to
 
-./gradlew gatlingRun
+``` ./gradlew gatlingRun ```
+
+That's it!
 
 Then you are running the default performance test against the default targeting Wordpress site.
 
