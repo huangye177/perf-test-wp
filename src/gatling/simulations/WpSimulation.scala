@@ -24,8 +24,8 @@ class WpSimulation extends Simulation {
     .exec(HomePage.get, VisitArticle.articleRead, SearchArticle.articleSearchRead)
 
   setUp(
-    adminScn.inject(atOnceUsers(2)),
+    adminScn.inject(atOnceUsers(1)),
 //    editorScn.inject(rampUsers(10) over (30 seconds)),
-    userScn.inject(rampUsers(100) over (60 seconds))
+    userScn.inject(rampUsers(200) over (600 seconds))
   ).protocols(httpConf)
 }
